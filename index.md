@@ -4,4 +4,4 @@ title: Home
 ---
 *Lorem ipsum*
 
-![Alt text](/media/basilisk-hatchling.png)
+![Sinister but cute. Cute but sinister.](/media/basilisk-hatchling.png)
