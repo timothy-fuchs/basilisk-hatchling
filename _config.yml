@@ -6,6 +6,7 @@ minima:
   skin: classic  # light theme
 
 header_pages:
+  - intro.md
   - hardware.md
   - prerequisites.md
   - configuration.md
