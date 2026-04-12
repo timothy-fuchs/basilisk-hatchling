@@ -1,0 +1,12 @@
+title: Basilisk Hatchling
+description: Hatching a Basilisk II Macintosh inside a Raspberry Pi Zero 2 W
+theme: minima
+
+minima:
+  skin: classic  # light theme
+
+header_pages:
+  - hardware.md
+  - prerequisites.md
+  - configuration.md
+  - credits.md
