@@ -87,7 +87,8 @@ sudo apt install -y \
 
 At the time of writing, **SDL2-2.32.10** was the latest release. Adjust accordingly.
 ```
-cd ~
+mkdir projects
+cd ~/projects
 wget https://libsdl.org/release/SDL2-2.32.10.tar.gz
 tar xf SDL2-2.32.10.tar.gz
 cd SDL2-2.32.10
@@ -116,3 +117,31 @@ sudo ldconfig
 
 This gives you a pure KMSDRM SDL2 build, ideal for headless Basilisk II.
 
+# Downloading, configuring, and building Basilisk II
+*Note: popular kanjitalk755 fork does not play nice with Waveshare LCD panels. This fork does.*
+```
+cd ~/projects
+git clone https://github.com/timothy-fuchs/macemu.git
+cd macemu/BasiliskII/src/Unix
+```
+Configure and build
+`./autogen.sh`
+
+Configure Basilisk II for:
+* SDL2 video/audio
+* No X11
+* No GTK
+* No JIT (safer on ARM)
+* No VOSF
+
+ ```
+./configure --enable-sdl-video --enable-sdl-audio --disable-vosf --disable-jit --without-x --without-gtk --disable-nls --disable-esd --disable-mon
+```
+Build and deploy
+```
+make -j4
+sudo make install
+```
+
+Before we go any further, let's install file hfs system utitlites that will make our life considerably more tolerable in the near future:
+`sudo apt install hfsutils`
