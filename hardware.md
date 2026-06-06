@@ -66,3 +66,12 @@ Best sourced on AliExpress.
 
 ![USB Audio](/media/usb_audio_dongle.png)
 
+
+## 10. Power supply
+
+Best sourced on AliExpress. Search term: `USB-C power supply`.
+I've been using this one, it works fine, but it is obviously not the only option. Raspberry Pi Zero 2 W has very modest power requirements.
+![Power supply](/media/psu.png)
+
+# Things that you will need to 3D print
+
